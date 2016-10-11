@@ -21,15 +21,77 @@ function sumOfArray(arrayOfNumbers, callback) {
     return sum;
 }
 
-var output = sumOfArray(array, function (sum) {
-    console.log(25,sum)
+var output = sumOfArray(
+    array, // 1 parameter
+    function (sum) {
+        console.log(25, sum)
+    } // 2 parameter
+);
+
+
+console.log(28, output);
+
+
+// function             : group of statements
+// callbacks            : function passed on to another function
+// anonymous functions  : function that don't have a name
+// callbacks can be anonymous
+
+// Named function
+
+function sayHello(){
+
+}
+
+// Example of callback
+
+function callbackExample(cb){
+
+}
+
+callbackExample(function () {
+
 });
 
-console.log(28,output);
+
+// Example of named callback
+
+function callbackExample(cb){
+
+}
+
+callbackExample(function abc() {
+
+});
+
+
+// another way for named callback
+
+function callback(){
+    console.log("I'm callback");
+}
+
+function callbackExample(cb){
+
+}
+
+callbackExample(callback);
 
 
 
-// function: group of statements 
-// callbacks: functions passes on to another function
-// anonymous functions: function that don't have a name
-// callbacks can be anonymous
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
