@@ -18,3 +18,19 @@ for (var i = 0; i <= 5; i++) {
 }
 console.log("Fini", i);
 
+
+// Function returning functions
+
+
+var hello = function(){
+    return function(){
+        console.log("Returning")
+    }
+};
+
+hello()();
+
+var rt = hello();
+
+rt();
+
